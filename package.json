@@ -1,0 +1,35 @@
+{
+  "name": "movieql",
+  "version": "1.0.0",
+  "description": "Movie API with Graph QL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --delay 3 --exec babel-node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mingg1/movieql.git"
+  },
+  "author": "Minji Choi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mingg1/movieql/issues"
+  },
+  "homepage": "https://github.com/mingg1/movieql#readme",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "graphql-yoga": "^1.18.3",
+    "node-fetch": "^3.2.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/node": "^7.16.8",
+    "@babel/preset-env": "^7.16.11",
+    "nodemon": "^2.0.15"
+  },
+  "nodemonConfig": {
+    "ext": "js, ts, json, jsx, env, graphql"
+  }
+}
