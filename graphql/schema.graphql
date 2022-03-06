@@ -3,7 +3,7 @@ type Movie {
   title: String!
   rating: Float!
   description_intro: String
-  language: String
+  year: Int!
   medium_cover_image: String
   genres: [String]
 }
