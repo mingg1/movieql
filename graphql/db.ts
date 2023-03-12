@@ -1,11 +1,11 @@
-import axios from "axios";
+import axios from 'axios';
 
-const BASE_URL = "https://yts.mx/api/v2/";
+const BASE_URL = 'https://yts.torrentbay.to/api/v2/';
 const LIST_MOVIES_URL = `${BASE_URL}list_movies.json`;
 const MOVIE_DETAILS_URL = `${BASE_URL}movie_details.json`;
 const MOVIE_SUGGESTIONS_URL = `${BASE_URL}movie_suggestions.json`;
 
-export const getMovies = async (limit, rating) => {
+export const getMovies = async (limit: number, rating: number) => {
   const {
     data: {
       data: { movies },
@@ -16,7 +16,7 @@ export const getMovies = async (limit, rating) => {
   return movies;
 };
 
-export const getMovie = async (id) => {
+export const getMovie = async (id: string) => {
   const {
     data: {
       data: { movie },
@@ -25,7 +25,7 @@ export const getMovie = async (id) => {
   return movie;
 };
 
-export const getSuggestions = async (id) => {
+export const getSuggestions = async (id: string) => {
   const {
     data: {
       data: { movies },

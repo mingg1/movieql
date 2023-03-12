@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --delay 3 --exec babel-node index.js"
+    "start": "tsx watch index.ts"
   },
   "repository": {
     "type": "git",
@@ -18,16 +18,18 @@
   },
   "homepage": "https://github.com/mingg1/movieql#readme",
   "dependencies": {
-    "axios": "^0.26.0",
+    "axios": "^0.26.1",
     "graphql-yoga": "^1.18.3",
-    "node-fetch": "^3.2.1"
+    "node-fetch": "^3.3.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.17.6",
-    "@babel/core": "^7.17.5",
-    "@babel/node": "^7.16.8",
-    "@babel/preset-env": "^7.16.11",
-    "nodemon": "^2.0.15"
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.21",
+    "tsx": "^3.12.4",
+    "typescript": "^4.9.5"
   },
   "nodemonConfig": {
     "ext": "js, ts, json, jsx, env, graphql"
