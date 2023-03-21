@@ -18,8 +18,8 @@ const typeDefs = gql`
 
   type Query {
     movies(limit: Int = 40, rating: Float = 8.0): [Movie]!
-    movie(id: Int!): Movie
-    suggestions(id: Int!): [Movie]!
+    movie(id: ID!): Movie
+    suggestions(id: ID!): [Movie]!
   }
 `;
 
