@@ -8,6 +8,6 @@ const server = new ApolloServer({
 });
 
 (async () => {
-  const { url } = await server.listen();
+  const { url } = await server.listen({ port: process.env.PORT || 4000 });
   console.log('Graphql server running at 🍿', url);
 })();
